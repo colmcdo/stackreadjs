@@ -16,7 +16,11 @@
     require([
      "esri/config",
       "esri/Map",
-      "esri/views/MapView"
+      "esri/views/MapView",
+      // adding in the modules for the graphics and layer
+       "esri/Graphic",  
+"esri/layers/GraphicsLayer"   
+], function(esriConfig,Map, MapView, Graphic, GraphicsLayer) {
     ], function (esriConfig,Map, MapView) {
 
       esriConfig.apiKey = "AAPK9decdd6558d24937ac6614a6238a4349xJI9Du-3z4SyrQbfMmyLq4QXJjnxMWHpXGYgRVkG2Zj30pXtLr7MOAzKvkUj6KeH";
