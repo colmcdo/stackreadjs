@@ -21,7 +21,7 @@
        "esri/Graphic",  
 "esri/layers/GraphicsLayer"   
 ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer) {
-    ], function (esriConfig,Map, MapView) {
+    ], function (esriConfig, Map, MapView) {
 
       esriConfig.apiKey = "AAPK9decdd6558d24937ac6614a6238a4349xJI9Du-3z4SyrQbfMmyLq4QXJjnxMWHpXGYgRVkG2Zj30pXtLr7MOAzKvkUj6KeH";
       const map = new Map({
@@ -38,6 +38,7 @@
         //adding the constructor for the graphics layer
         const graphicsLayer = new GraphicsLayer();  
         map.add(graphicsLayer);
+
       // defining the geometry for the point
       const point = { //Create a point  
   type: "point",  
